@@ -346,10 +346,8 @@ bool Endpoint::reg(void const* data, size_t size, uint64_t& mr_id) {
   if (!initialized_) {
     int idx = uccl::get_dev_idx((void*)data);
     if (idx != -1) {
-      // Pointer is on device idx
       local_gpu_idx_ = idx;
     } else {
-      // Host memory/unknown memory type - fallback to dev 0
       local_gpu_idx_ = 0;
     }
     initialized_ = true;

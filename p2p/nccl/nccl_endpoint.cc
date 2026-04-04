@@ -2,6 +2,7 @@
 #include "include/common.h"
 #include "util/gpu_rt.h"
 #include "util/net.h"
+#include "util/util.h"
 #include <arpa/inet.h>
 #include <netinet/in.h>
 #include <cerrno>
